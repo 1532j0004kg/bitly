@@ -8,19 +8,23 @@
 
 <title>Maxi's URL shortener</title>
 <html>
-  <center>
+  <div class="container-fluid">
+    <center>
     <h1>
       MAXI'S URL SHORTENER
     </h1>
-      <button id="buserinfo">Account Holder</button>  
-      <button id="bhistory">History</button>  
+        <b id="userinfo"></b>
+    <br>
+   <input id="input" placeholder="Enter the url needs to be shortened"><br><br>
+   <button id="shorten">Shorten</button>
+    <button id="buserinfo">Account Holder</button>  
+      <button id="bhistory">History</button> 
+    <br><br><div id="shortened"></div><br> 
     <br><br>
-    <b id="userinfo"></b>
-  <input id="input" placeholder="Enter the url needs to be shortened">
-  <button id="shorten">Shorten</button><br><br>
-  <div id="shortened"></div><br>
-  <div id="history"></div><br>
-    <footer><b>Powered by : Bit.ly</b></footer></center>
+  <div id="historytitle"></div>  
+  <div id="history" class="row"></div><br>
+    <footer><b>Powered by : </b><a href="https://bitly.com" target="_blank">Bitly.com</a></footer></center>
+  </div>
 </html>
 
 <script src="index.js"></script>
